@@ -9,6 +9,8 @@ author:
   name: Brian Cleveland
   email: boru.design@gmail.com
 
+baseurl: /test-jekyllrb
+
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
