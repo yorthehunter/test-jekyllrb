@@ -9,6 +9,10 @@ author:
   name: Brian Cleveland
   email: boru.design@gmail.com
 
+baseurl: "/test-jekyllrb" # the subpath of your site, e.g. /blog/
+url:     "yorthehunter.github.io" # the base hostname & protocol for your site
+
+
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
