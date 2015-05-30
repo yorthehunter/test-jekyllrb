@@ -184,7 +184,7 @@ module.exports = function (grunt) {
     },
     useminPrepare: {
       options: {
-        dest: '<%= yeoman.dist %>'
+        dest: '<%= yeoman.dist %>/test-jekyllrb/'
       },
       html: '<%= yeoman.dist %>/index.html'
     },
@@ -192,8 +192,8 @@ module.exports = function (grunt) {
       options: {
         assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/img']
       },
-      html: ['<%= yeoman.dist %>/test-jekyllrb/**/*.html'],
-      css: ['<%= yeoman.dist %>/test-jekyllrb/css/**/*.css']
+      html: ['<%= yeoman.dist %>/**/*.html'],
+      css: ['<%= yeoman.dist %>/css/**/*.css']
     },
     htmlmin: {
       dist: {
@@ -205,9 +205,9 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          cwd: '<%= yeoman.dist %>/test-jekyllrb',
+          cwd: '<%= yeoman.dist %>',
           src: '**/*.html',
-          dest: '<%= yeoman.dist %>/test-jekyllrb'
+          dest: '<%= yeoman.dist %>'
         }]
       }
     },
@@ -230,9 +230,9 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          cwd: '<%= yeoman.dist %>/test-jekyllrb',
+          cwd: '<%= yeoman.dist %>',
           src: '**/*.{jpg,jpeg,png}',
-          dest: '<%= yeoman.dist %>/test-jekyllrb'
+          dest: '<%= yeoman.dist %>'
         }]
       }
     },
@@ -240,9 +240,9 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.dist %>/test-jekyllrb',
+          cwd: '<%= yeoman.dist %>',
           src: '**/*.svg',
-          dest: '<%= yeoman.dist %>/test-jekyllrb'
+          dest: '<%= yeoman.dist %>'
         }]
       }
     },
@@ -265,7 +265,7 @@ module.exports = function (grunt) {
             //'favicon.ico',
             //'apple-touch*.png'
           ],
-          dest: '<%= yeoman.dist %>/test-jekyllrb'
+          dest: '<%= yeoman.dist %>'
         }]
       }
     },
