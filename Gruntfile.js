@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     },
     watch: {
       sass: {
-        files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}', '<%= yeoman.app %>/_bower_components/**/*.{scss,sass}'],
+        files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
         tasks: ['sass:server']
       },
       coffee: {
