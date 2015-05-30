@@ -184,7 +184,7 @@ module.exports = function (grunt) {
     },
     useminPrepare: {
       options: {
-        dest: '<%= yeoman.dist %>/test-jekyllrb/'
+        dest: '<%= yeoman.dist %>'
       },
       html: '<%= yeoman.dist %>/index.html'
     },
